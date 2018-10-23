@@ -2,7 +2,7 @@
 
 Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipulation.
 
-# Assignment Details
+## Assignment Details
 
 For this assignment, you’ll be building a meme generator in the browser using HTML, CSS, and JavaScript. 
 
@@ -18,3 +18,7 @@ Your generator should consist of a form that accepts a link to an image, text fo
 Be sure to style your meme generator! It should be functional but also look nice.
 
 Make sure you use vanilla JavaScript only - no frameworks or third-party libraries.
+
+## Graphics
+
+Design inspiration based on a robot illustration by Razvan Vezeteu (https://dribbble.com/RazvanVezeteu).
