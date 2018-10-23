@@ -19,6 +19,10 @@ Be sure to style your meme generator! It should be functional but also look nice
 
 Make sure you use vanilla JavaScript only - no frameworks or third-party libraries.
 
+## Example Image URL
+
+Business cat: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg
+
 ## Graphics
 
 Design inspiration based on a robot illustration by Razvan Vezeteu (https://dribbble.com/RazvanVezeteu).
