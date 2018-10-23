@@ -2,7 +2,7 @@
 
 Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipulation.
 
-## Assignment Details
+## Assignment: JavaScript and the DOM, Part I
 
 For this assignment, you’ll be building a meme generator in the browser using HTML, CSS, and JavaScript. 
 
