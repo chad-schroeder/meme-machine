@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meme Machine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="form-container">
+      <div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="screw screw-top screw-top-left screw-paused"></div>
+          <h1 class="mb-0">Meme Machine</h1>
+          <div class="screw screw-top screw-top-right screw-paused"></div>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="headerText" class="d-flex">Header text</label>
+            <input type="text" class="form-control form-control-sm" id="headerText" maxlength="65" autofocus
+              autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="footerText">Footer text</label>
+            <input type="text" class="form-control form-control-sm" id="footerText" maxlength="65" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="memeURL" class="d-flex justify-content-between align-items-baseline">Image URL <small class="text-muted">Required</small></small></label>
+            <input type="url" class="form-control form-control-sm" id="memeURL" placeholder="http//..." autocomplete="off"
+              required />
+            <small id="memeHelper" class="form-text text-muted text-initial">
+              <strong>Link error:</strong> No image found...
+            </small>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary btn-block text-center mt-1 mb-3">
+              Generate
+            </button>
+          </div>
+        </form>
+        <div class="d-flex justify-content-between">
+          <div class="screw screw-bottom screw-bottom-left screw-paused"></div>
+          <div class="screw screw-bottom screw-bottom-right screw-paused"></div>
+        </div>
+      </div>
+    </div>
+    <div class="meme-deck d-flex flex-wrap align-items-start">
+      <div class="meme-deck-scroll d-flex flex-wrap justify-content-center align-items-start"></div>
+    </div>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
