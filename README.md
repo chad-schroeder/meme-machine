@@ -4,6 +4,8 @@ Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipula
 
 View project: https://chad-schroeder.github.io/meme-machine
 
+(For image URL testing purposes, try: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg)
+
 ## Assignment: JavaScript and the DOM, Part I
 
 For this assignment, you’ll be building a meme generator in the browser using HTML, CSS, and JavaScript. 
@@ -20,10 +22,6 @@ Your generator should consist of a form that accepts a link to an image, text fo
 Be sure to style your meme generator! It should be functional but also look nice.
 
 Make sure you use vanilla JavaScript only - no frameworks or third-party libraries.
-
-## Example Image URL
-
-Business cat: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg
 
 ## Graphics
 
