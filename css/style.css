@@ -16,24 +16,6 @@ body::after {
   content: url(../images/cross.svg);
 }
 
-main {
-  position: relative;
-  overflow-x: hidden;
-}
-
-main::after {
-  content: '';
-  position: absolute;
-  bottom: -89px;
-  right: -60px;
-  width: 220px;
-  height: 186px;
-  overflow-x: hidden;
-  background-image: url(../images/robot.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .btn {
   letter-spacing: 1px;
 }
@@ -93,7 +75,7 @@ h1 {
   border-radius: 8px;
 }
 
-.form-container > div {
+.form-container .form-container-inner {
   padding: 12px 24px;
   background-color: white;
   border-radius: 8px;
@@ -258,12 +240,6 @@ label {
   }
 }
 @media (min-width: 768px) {
-  main {
-    overflow-x: visible;
-  }
-  main::after {
-    display: none;
-  }
   .form-container {
     position: absolute;
     top: 225px;
@@ -272,18 +248,44 @@ label {
     width: 360px;
     z-index: 100;
   }
-  .form-container::after {
-    content: '';
+  .robot {
     position: absolute;
     bottom: 100%;
-    left: -28px;
-    margin-top: -1px;
-    margin-bottom: 2px;
     width: 220px;
     height: 186px;
     background-image: url(../images/robot.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .robot-sparks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  .spark:first-child {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/lightning-bolt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-12deg);
+  }
+  .spark:nth-child(2) {
+    position: absolute;
+    top: -28px;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/lightning-bolt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(12deg);
   }
   .meme-deck {
     margin-top: 20px;
@@ -354,6 +356,34 @@ label {
   -webkit-animation: vibrate-1 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     infinite both;
   animation: vibrate-1 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
+}
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+.blink-1 {
+  -webkit-animation: blink-1 0.6s both 0.4s;
+  animation: blink-1 0.6s both 0.4s;
 }
 
 /* animate.css helpers */

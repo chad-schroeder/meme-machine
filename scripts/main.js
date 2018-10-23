@@ -4,7 +4,9 @@ const memeHeader = form.querySelector('#headerText');
 const memeURL = form.querySelector('#memeURL');
 const memeFooter = form.querySelector('#footerText');
 const imageHelper = form.querySelector('#memeHelper');
+const button = form.querySelector('button[type=submit]');
 const deck = document.querySelector('.meme-deck .meme-deck-scroll');
+const sparks = document.querySelector('.robot-sparks');
 const deleteMeme = event => {
   if (!event.target.closest('.meme')) return;
   event.target.remove();
@@ -26,10 +28,16 @@ document.addEventListener('submit', function(event) {
 
   // if image found...
   img.onload = () => {
+    // update button text
+    button.textContent = 'Generating...';
+    // turn on robot sparks
+    sparks.classList.add('blink-1');
     // start container shake
     formContainer.classList.add('vibrate-1');
     // output meme and stop animations
     setTimeout(() => {
+      button.textContent = 'Generate';
+      sparks.classList.remove('blink-1');
       formContainer.classList.remove('vibrate-1');
 
       // construct meme
