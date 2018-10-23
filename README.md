@@ -4,7 +4,7 @@ Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipula
 
 View project: https://chad-schroeder.github.io/meme-machine
 
-(For image URL testing purposes, try: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg)
+(Example image URL: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg)
 
 ## Assignment: JavaScript and the DOM, Part I
 
