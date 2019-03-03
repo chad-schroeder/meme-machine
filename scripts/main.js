@@ -7,12 +7,15 @@ const imageHelper = form.querySelector('#memeHelper');
 const button = form.querySelector('button[type=submit]');
 const deck = document.querySelector('.meme-deck .meme-deck-scroll');
 const sparks = document.querySelector('.robot-sparks');
+
+// on meme click, delete
 const deleteMeme = event => {
   if (!event.target.closest('.meme')) return;
   event.target.remove();
 };
 
-document.addEventListener('submit', function(event) {
+// on form submission...
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
   // construct image
@@ -21,7 +24,7 @@ document.addEventListener('submit', function(event) {
 
   // if image not found...
   img.onerror = () => {
-    hasImage = false;
+    let hasImage = false;
     imageHelper.style.display = 'block';
     console.log('Error: ', hasImage);
   };
@@ -68,7 +71,8 @@ document.addEventListener('submit', function(event) {
   };
 });
 
-document.addEventListener(
+// listen for click inside meme area
+deck.addEventListener(
   'click',
   function(event) {
     deleteMeme(event);
