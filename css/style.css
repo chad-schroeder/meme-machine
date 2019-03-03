@@ -135,6 +135,7 @@ label {
   margin: 15px;
   min-width: 220px;
   max-width: 220px;
+  overflow: hidden;
   cursor: pointer;
   background-color: #26547c;
   border-radius: 8px;
@@ -179,7 +180,6 @@ label {
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
     -2px 0px 0 #000, 2px 2px 4px #000;
-  word-break: break-all;
 }
 
 .meme .header-text {
