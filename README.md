@@ -2,6 +2,8 @@
 
 Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipulation using vanilla javascript. 
 
+![Meme Machine screenshot](https://github.com/chad-schroeder/meme-machine/blob/master/meme-machine.png)
+
 View project: https://chad-schroeder.github.io/meme-machine
 
 (Example image URL: http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg)
