@@ -1,6 +1,6 @@
 # Meme Machine
 
-Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipulation using vanilla javascript and animation. 
+Welcome to Meme Machine, a pre-curriculum Rithm project to practice DOM manipulation using vanilla javascript and CSS animation. 
 
 ![Meme Machine screenshot](https://github.com/chad-schroeder/meme-machine/blob/master/meme-machine.png)
 
